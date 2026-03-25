@@ -1,0 +1,15 @@
+# Render Blueprint: connect this repo in the Render dashboard and apply this file,
+# or create a Static Site with the same build/publish settings.
+services:
+  - type: web
+    name: portfolio
+    runtime: static
+    buildCommand: npm ci && npm run build
+    staticPublishPath: ./dist
+    envVars:
+      - key: NODE_VERSION
+        value: "20.19.0"
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
