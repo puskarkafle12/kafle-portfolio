@@ -1,5 +1,7 @@
-# Render Blueprint: connect this repo in the Render dashboard and apply this file,
-# or create a Static Site with the same build/publish settings.
+# Deploy: New → Blueprint (use this file) OR New → Static Site with:
+#   Build command:    npm ci && npm run build
+#   Publish directory: dist   ← must be "dist", not repo root (root would ship /src/main.jsx)
+#   Add rewrite: source /* → destination /index.html (type: Rewrite)
 services:
   - type: web
     name: portfolio
