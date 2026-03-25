@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none" role="img" aria-labelledby="portfolioLogoTitle">
+  <title id="portfolioLogoTitle">Portfolio</title>
+  <defs>
+    <linearGradient id="portfolioGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#8b5cf6" />
+      <stop offset="100%" stop-color="#6d28d9" />
+    </linearGradient>
+  </defs>
+  <rect width="48" height="48" rx="12" fill="url(#portfolioGrad)" />
+  <text
+    x="24"
+    y="32"
+    text-anchor="middle"
+    fill="#ffffff"
+    font-family="system-ui, -apple-system, Segoe UI, sans-serif"
+    font-size="18"
+    font-weight="800"
+    letter-spacing="-0.02em"
+  >
+    PK
+  </text>
+</svg>
